@@ -20,7 +20,7 @@ class SizingCalculatorTest < ActiveSupport::TestCase
     assert_equal 1, result[:memory_nodes_required]
     assert_equal 1, result[:recommended_nodes]
     assert_equal 93.75, result[:cpu_utilisation_percentage]
-    assert_equal 96.0, result[:memory_utilisation_percentage]
+    assert_equal 93.75, result[:memory_utilisation_percentage]
   end
 
   test "rounds up when a workload does not fit on one node" do

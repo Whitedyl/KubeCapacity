@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_11_12_195825) do
+ActiveRecord::Schema[8.1].define(version: 2026_11_14_235000) do
   create_table "sizing_scenarios", force: :cascade do |t|
     t.string "name"
     t.integer "replica_count"
@@ -18,7 +18,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_11_12_195825) do
     t.integer "memory_request_megabytes"
     t.integer "node_cpu_millicores"
     t.integer "node_memory_megabytes"
-    t.integer "reserved_percentage"
+    t.integer "system_reserved_percentage"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
